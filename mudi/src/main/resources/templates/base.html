@@ -1,3 +1,5 @@
+
+<!--Cabeçalho-->
 <head th:fragment="head">
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -20,3 +22,14 @@
         }
     </style>
 </head>
+
+<!--Logo-->
+<div th:fragment="logo" class="logo-container mb-3 p-3 d-flex justify-content-between">
+    <span class="logo">mudi</span>
+    <span class="mt-3">login</span>
+</div>
+
+<!--Jumbotron-->
+<div th:fragment="titulo(valor)" class="jumbotron mb-0">
+    <h1 class="display-4" th:text="${valor}"></h1>
+</div>
